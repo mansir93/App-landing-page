@@ -1,0 +1,94 @@
+/*add img to the bground and fixed height*/
+.jumbotron{
+	background: url(https://freenaturestock.com/wp-content/uploads/freenaturestock-1977-1024x683.jpg);
+	 background-size: 100% 100%;
+	height: 600px;
+}
+
+.logo{
+	width: 75px;
+	height: 75px;
+}
+.feature{
+	color: white;
+}
+.feature h1{
+	padding-top: 60px;
+	}
+.feature .btn{
+	font-weight: bold;
+	color: white;
+	background: rgba(145,82,58,0.5);
+	border-radius: 10px;
+	margin-top: 20px;
+	width: 160px;
+	margin-right: 15px;
+}
+.feature .btn:hover{
+	background-color: rgb(145,82,58);
+}
+
+.trial{
+	text-align: center;
+	padding: 20px 0 40px 0;
+	color: black;
+}
+.trial img{
+	height: 70px;
+	width: 200px;
+	margin: 20px;
+}
+.footer{
+	background-color: gainsboro;
+	font-size: 15px;
+	padding: 10px 0;
+}
+
+
+/*add style to devices between 480px to 768px*/
+@media (min-width:480px) and (max-width:768px){
+	.jumbotron{
+		height: 410px;
+		margin:0;
+	}
+	.logo{
+		height: 50px;
+		width: 50px;
+	}
+	.feature{
+		text-align: center;
+	}
+	.feature h1{
+	padding-top: 30px;
+	}
+	.feature p{
+	font-size: 17px;
+	}
+	
+}
+/*add style to devices under 480px */
+@media(max-width:480px){
+	.jumbotron{
+		height: 410px;
+		margin:0;
+	}
+	.logo{
+		height: 40px;
+		width: 40px;
+	}
+	.feature{
+		text-align: center;
+	}
+	.feature h1{
+	padding-top: 10px;
+	}
+	.feature p, .feature a{
+	font-size: 13px;
+	}
+	.trial img{
+	height: 35px;
+	width: 100px;
+	margin: 10px;
+}
+
+}
